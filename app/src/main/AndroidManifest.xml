@@ -21,11 +21,14 @@
             android:name=".activities.CategoriesWrongActivity"
             android:label="@string/categories_title" />
         <activity
-            android:name=".activities.NotesWrongActivity"
+            android:name=".activities.NoteListActivity"
             android:label="@string/notes_title" />
         <activity
             android:name=".activities.EditNoteActivity"
             android:label="@string/note_edition_title" />
+        <activity
+            android:name=".activities.ImageListActivity"
+            android:label="@string/image_list_title" />
     </application>
 
 </manifest>

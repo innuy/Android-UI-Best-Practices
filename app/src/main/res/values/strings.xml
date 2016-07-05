@@ -12,7 +12,6 @@
     <string name="info_empty_message">No information to show</string>
     <string name="info_close_btn">Close</string>
 
-
     <string name="categories_title">Categories</string>
     <string-array name="categories_names">
         <item>Category 1</item>
@@ -22,6 +21,11 @@
         <item>Category 5</item>
     </string-array>
     <string name="info_categories_wrong">As you can see, there is a lot of empty space after the category names, and even more at the bottom of the screen.</string>
+    <string name="categories_wrong_dialog_title">Edit</string>
+    <string name="categories_wrong_dialog_message">What do you want to edit?</string>
+    <string name="categories_wrong_dialog_images">Images</string>
+    <string name="categories_wrong_dialog_notes">Notes</string>
+    <string name="categories_wrong_dialog_cancel">Cancel</string>
 
     <string name="notes_title">Notes</string>
     <string name="note_item_title">Note # </string>
@@ -29,6 +33,8 @@
     <string name="note_edition_title">Note # N</string>
     <string name="note_edition_cancel">Cancel</string>
     <string name="note_edition_save">Save</string>
+
+    <string name="image_list_title">Images</string>
 
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

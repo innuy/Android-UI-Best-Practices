@@ -1,5 +1,7 @@
 package com.example.diegoinsua.uibestpracticesexample.activities;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -32,12 +34,35 @@ public class CategoriesWrongActivity extends AppCompatActivity {
         setContentView(R.layout.activity_categories_wrong);
         ButterKnife.inject(this);
 
-        final Intent notesIntent = new Intent(this, NotesWrongActivity.class);
+        final Intent notesIntent = new Intent(this, NoteListActivity.class);
+        final Intent imageListIntent = new Intent(this, ImageListActivity.class);
+
+        final AlertDialog.Builder builder = new AlertDialog.Builder(this);
 
         categoryList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                startActivity(notesIntent);
+                // Creates a dialog to choose navigate to the images or the notes
+                builder
+                        .setTitle(R.string.categories_wrong_dialog_title)
+                        .setMessage(R.string.categories_wrong_dialog_message)
+                        .setNeutralButton(R.string.categories_wrong_dialog_images,
+                                new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        startActivity(imageListIntent);
+                                    }
+                                })
+                        .setPositiveButton(R.string.categories_wrong_dialog_notes,
+                                new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        startActivity(notesIntent);
+                                    }
+                                })
+                        .setNegativeButton(R.string.categories_wrong_dialog_cancel, null);
+
+                builder.create().show();
             }
         });
     }

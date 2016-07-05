@@ -8,14 +8,14 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
-import com.example.diegoinsua.uibestpracticesexample.adapter.NotesAdapter;
+import com.example.diegoinsua.uibestpracticesexample.adapter.NoteListAdapter;
 import com.example.diegoinsua.uibestpracticesexample.fragments.InfoDialogFragment;
 import com.example.diegoinsua.uibestpracticesexample.R;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 
-public class NotesWrongActivity extends AppCompatActivity {
+public class NoteListActivity extends AppCompatActivity {
 
     @InjectView(R.id.notes_list)
     RecyclerView notesList;
@@ -26,7 +26,7 @@ public class NotesWrongActivity extends AppCompatActivity {
         setContentView(R.layout.activity_notes);
         ButterKnife.inject(this);
 
-        notesList.setAdapter(new NotesAdapter(this));
+        notesList.setAdapter(new NoteListAdapter(this));
         notesList.setLayoutManager(new LinearLayoutManager(this));
     }
 
