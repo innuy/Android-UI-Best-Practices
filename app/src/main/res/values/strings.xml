@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">UI Best Practices Example</string>
+    <string name="introduction">
+        This app is intended to show you the difference between an app that follow the best practices and other that doesn\'t.
+        \n\nThrough the views you will see an info button on the app bar, there you will have some explanations about what is right or wrong on the screen.
+    </string>
+
+    <string name="right_way">Right way</string>
+    <string name="wrong_way">Wrong way</string>
+
+    <string name="info">Information</string>
+    <string name="info_empty_message">No information to show</string>
+    <string name="info_close_btn">Close</string>
+
+
+    <string name="categories_title">Categories</string>
+    <string-array name="categories_names">
+        <item>Category 1</item>
+        <item>Category 2</item>
+        <item>Category 3</item>
+        <item>Category 4</item>
+        <item>Category 5</item>
+    </string-array>
+    <string name="info_categories_wrong">As you can see, there is a lot of empty space after the category names, and even more at the bottom of the screen.</string>
+
+    <string name="notes_title">Notes</string>
+    <string name="note_item_title">Note # </string>
+
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </string>
+</resources>

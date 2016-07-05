@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:shrinkColumns="*"
+        android:stretchColumns="*"
+        android:paddingTop="@dimen/content.padding_top"
+        android:paddingBottom="@dimen/content.padding_bottom"
+        android:paddingLeft="@dimen/content.padding_left"
+        android:paddingRight="@dimen/content.padding_right">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/scrollView"
+                android:layout_weight="0">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/introduction"
+                    android:id="@+id/introduction"
+                    android:textSize="16sp"
+                    android:layout_margin="5dp"
+                     />
+
+            </ScrollView>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:layout_gravity="center_vertical">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/right_way"
+                    android:id="@+id/right_way"
+                    android:elegantTextHeight="false"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginLeft="40dp"
+                    style="@style/AppTheme.Button" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wrong_way"
+                    android:id="@+id/wrong_way"
+                    android:layout_marginTop="20dp"
+                    android:theme="@style/AppTheme"
+                    style="@style/AppTheme.Button"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp" />
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
