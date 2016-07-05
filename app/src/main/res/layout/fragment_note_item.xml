@@ -46,10 +46,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/item_edit"
-        android:layout_alignTop="@+id/item_title"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
         android:src="@android:drawable/ic_menu_edit"
-        android:layout_margin="10dp" />
+        android:layout_alignTop="@+id/item_title"
+        android:layout_alignRight="@+id/separator"
+        android:layout_alignEnd="@+id/separator"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
 
 </RelativeLayout>

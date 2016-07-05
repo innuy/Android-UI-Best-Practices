@@ -22,6 +22,10 @@
             android:label="@string/categories_title" />
         <activity
             android:name=".activities.NotesWrongActivity"
-            android:label="@string/notes_title"/>
+            android:label="@string/notes_title" />
+        <activity
+            android:name=".activities.EditNoteActivity"
+            android:label="@string/note_edition_title" />
     </application>
+
 </manifest>

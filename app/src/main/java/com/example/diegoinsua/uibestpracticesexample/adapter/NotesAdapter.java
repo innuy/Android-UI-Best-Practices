@@ -1,12 +1,14 @@
 package com.example.diegoinsua.uibestpracticesexample.adapter;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.diegoinsua.uibestpracticesexample.R;
+import com.example.diegoinsua.uibestpracticesexample.activities.EditNoteActivity;
 
 /**
  * Created on 4/7/16.
@@ -36,6 +38,14 @@ public class NotesAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
 
         itemViewHolder.title.setText(activity.getString(R.string.note_item_title));
         itemViewHolder.title.append(" " + (position + 1));
+
+        itemViewHolder.edit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent editActivity = new Intent(activity, EditNoteActivity.class);
+                activity.startActivity(editActivity);
+            }
+        });
     }
 
     @Override

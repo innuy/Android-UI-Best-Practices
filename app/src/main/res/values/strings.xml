@@ -26,6 +26,10 @@
     <string name="notes_title">Notes</string>
     <string name="note_item_title">Note # </string>
 
+    <string name="note_edition_title">Note # N</string>
+    <string name="note_edition_cancel">Cancel</string>
+    <string name="note_edition_save">Save</string>
+
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
