@@ -31,7 +31,9 @@
             android:label="@string/image_list_title" />
         <activity
             android:name=".activities.ImageFullscreenActivity"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:name=".activities.NoteListWActivity" />
+        <activity android:name=".activities.NoteListRActivity"></activity>
     </application>
 
 </manifest>
