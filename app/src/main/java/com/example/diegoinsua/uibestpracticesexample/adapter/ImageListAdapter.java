@@ -2,13 +2,14 @@ package com.example.diegoinsua.uibestpracticesexample.adapter;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.diegoinsua.uibestpracticesexample.R;
-import com.example.diegoinsua.uibestpracticesexample.activities.CategoriesWrongActivity;
+import com.example.diegoinsua.uibestpracticesexample.activities.ImageFullscreenActivity;
 
 /**
  * Created on 5/7/16.
@@ -36,11 +37,32 @@ public class ImageListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHold
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
         ImageViewHolder viewHolder = (ImageViewHolder) holder;
 
+        int imageResource;
+        switch (position % 4) {
+            case 0:
+                imageResource = R.mipmap.sample_image;
+                break;
+            case 1:
+                imageResource = R.mipmap.sample_image_2;
+                break;
+            case 2:
+                imageResource = R.mipmap.sample_image_3;
+                break;
+            default:
+                imageResource = R.mipmap.sample_image_4;
+        }
+        viewHolder.image.setImageResource(imageResource);
+
+        final Intent intent = new Intent(activity, ImageFullscreenActivity.class);
+
+        // It adds the arguments to the activity intent
+        Bundle arguments = new Bundle();
+        arguments.putInt(ImageFullscreenActivity.IMAGE_KEY, imageResource);
+        intent.putExtras(arguments);
+
         viewHolder.image.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // TODO: CHANGE TO USE THE IMAGE SCREEN
-                Intent intent = new Intent(activity, CategoriesWrongActivity.class);
                 activity.startActivity(intent);
             }
         });

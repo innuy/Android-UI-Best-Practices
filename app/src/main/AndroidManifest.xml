@@ -29,6 +29,9 @@
         <activity
             android:name=".activities.ImageListActivity"
             android:label="@string/image_list_title" />
+        <activity
+            android:name=".activities.ImageFullscreenActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
     </application>
 
 </manifest>
