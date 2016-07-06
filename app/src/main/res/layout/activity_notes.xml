@@ -4,11 +4,13 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.NoteListActivity">
+    tools:context=".activities.NoteListWActivity">
 
 
-    <android.support.v7.widget.RecyclerView
+    <fragment
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/notes_list" />
+        android:name="com.example.diegoinsua.uibestpracticesexample.fragments.NotesFragment"
+        android:id="@+id/fragment2"
+        android:layout_gravity="center_horizontal" />
 </LinearLayout>

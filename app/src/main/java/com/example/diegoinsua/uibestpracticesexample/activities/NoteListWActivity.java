@@ -15,19 +15,12 @@ import com.example.diegoinsua.uibestpracticesexample.R;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 
-public class NoteListActivity extends AppCompatActivity {
-
-    @InjectView(R.id.notes_list)
-    RecyclerView notesList;
+public class NoteListWActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notes);
-        ButterKnife.inject(this);
-
-        notesList.setAdapter(new NoteListAdapter(this));
-        notesList.setLayoutManager(new LinearLayoutManager(this));
     }
 
     @Override

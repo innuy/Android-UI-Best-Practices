@@ -18,10 +18,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activities.CategoriesWrongActivity"
+            android:name=".activities.CategoriesWActivity"
             android:label="@string/categories_title" />
         <activity
-            android:name=".activities.NoteListActivity"
+            android:name=".activities.NoteListWActivity"
             android:label="@string/notes_title" />
         <activity
             android:name=".activities.EditNoteActivity"
@@ -32,8 +32,9 @@
         <activity
             android:name=".activities.ImageFullscreenActivity"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
-        <activity android:name=".activities.NoteListWActivity" />
-        <activity android:name=".activities.NoteListRActivity"></activity>
+        <activity
+            android:name=".activities.NoteListRActivity"
+            android:label="@string/notes_title"/>
     </application>
 
 </manifest>

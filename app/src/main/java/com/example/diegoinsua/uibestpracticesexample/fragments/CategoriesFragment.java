@@ -1,11 +1,9 @@
 package com.example.diegoinsua.uibestpracticesexample.fragments;
 
-import android.app.AlertDialog;
 import android.content.Context;
-import android.content.DialogInterface;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,22 +11,25 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.example.diegoinsua.uibestpracticesexample.R;
-import com.example.diegoinsua.uibestpracticesexample.activities.ImageListActivity;
-import com.example.diegoinsua.uibestpracticesexample.activities.NoteListActivity;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 
 public class CategoriesFragment extends Fragment {
 
+    public static final String LOG_TAG = "CategoriesFragment";
+
+    public interface CategoryFragmentListener {
+        void onCategoryClick(int categoryId);
+    }
+
     @InjectView(R.id.category_list)
     ListView categoryList;
 
-    public CategoriesFragment() { }
+    private CategoryFragmentListener listener;
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    public CategoriesFragment() {
+        listener = null;
     }
 
     @Override
@@ -38,35 +39,10 @@ public class CategoriesFragment extends Fragment {
 
         ButterKnife.inject(this, view);
 
-        final Intent notesIntent = new Intent(getContext(), NoteListActivity.class);
-        final Intent imageListIntent = new Intent(getContext(), ImageListActivity.class);
-
-        final AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
-
         categoryList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                // Creates a dialog to choose navigate to the images or the notes
-                builder
-                        .setTitle(R.string.categories_wrong_dialog_title)
-                        .setMessage(R.string.categories_wrong_dialog_message)
-                        .setNeutralButton(R.string.categories_wrong_dialog_images,
-                                new DialogInterface.OnClickListener() {
-                                    @Override
-                                    public void onClick(DialogInterface dialog, int which) {
-                                        startActivity(imageListIntent);
-                                    }
-                                })
-                        .setPositiveButton(R.string.categories_wrong_dialog_notes,
-                                new DialogInterface.OnClickListener() {
-                                    @Override
-                                    public void onClick(DialogInterface dialog, int which) {
-                                        startActivity(notesIntent);
-                                    }
-                                })
-                        .setNegativeButton(R.string.categories_wrong_dialog_cancel, null);
-
-                builder.create().show();
+                listener.onCategoryClick(position);
             }
         });
 
@@ -76,5 +52,16 @@ public class CategoriesFragment extends Fragment {
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
+        if (context instanceof CategoryFragmentListener) {
+            listener = (CategoryFragmentListener) context;
+        } else {
+            Log.e(LOG_TAG, "The activity must implement the listener to handle callback messages");
+        }
+    }
+
+    @Override
+    public void onDetach() {
+        super.onDetach();
+        listener = null;
     }
 }
