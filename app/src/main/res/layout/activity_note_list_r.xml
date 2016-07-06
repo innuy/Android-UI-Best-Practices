@@ -5,13 +5,6 @@
     android:layout_height="match_parent"
     tools:context="com.example.diegoinsua.uibestpracticesexample.activity.NoteListRActivity">
 
-    <!--<fragment-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="match_parent"-->
-        <!--android:name="com.example.diegoinsua.uibestpracticesexample.fragments.CategoryListFragment"-->
-        <!--android:id="@+id/fragment"-->
-        <!--android:layout_gravity="left|center_vertical" />-->
-
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
@@ -37,6 +30,20 @@
                 android:layout_gravity="top" />
         </android.support.v4.view.ViewPager>
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/translucent_black">
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.example.diegoinsua.uibestpracticesexample.fragment.CategoryListWFragment"
+            android:id="@+id/fragment"
+            android:layout_marginRight="150dp" />
     </LinearLayout>
 
 

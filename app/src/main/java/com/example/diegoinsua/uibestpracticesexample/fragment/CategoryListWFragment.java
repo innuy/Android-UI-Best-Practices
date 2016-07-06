@@ -15,27 +15,27 @@ import com.example.diegoinsua.uibestpracticesexample.R;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 
-public class CategoryListFragment extends Fragment {
+public class CategoryListWFragment extends Fragment {
 
-    public static final String LOG_TAG = "CategoryListFragment";
+    public static final String LOG_TAG = "CategoryListWFragment";
 
-    public interface CategoryFragmentListener {
+    public interface CategoryWFragmentListener {
         void onCategoryClick(int categoryId);
     }
 
     @InjectView(R.id.category_list)
     ListView categoryList;
 
-    private CategoryFragmentListener listener;
+    private CategoryWFragmentListener listener;
 
-    public CategoryListFragment() {
+    public CategoryListWFragment() {
         listener = null;
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_categoriy_list, container, false);
+        View view = inflater.inflate(R.layout.fragment_category_list_w, container, false);
 
         ButterKnife.inject(this, view);
 
@@ -53,8 +53,8 @@ public class CategoryListFragment extends Fragment {
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-        if (context instanceof CategoryFragmentListener) {
-            listener = (CategoryFragmentListener) context;
+        if (context instanceof CategoryWFragmentListener) {
+            listener = (CategoryWFragmentListener) context;
         } else {
             Log.e(LOG_TAG, "The activity must implement the listener to handle callback messages");
         }
