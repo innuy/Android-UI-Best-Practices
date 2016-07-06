@@ -1,4 +1,4 @@
-package com.example.diegoinsua.uibestpracticesexample.fragments;
+package com.example.diegoinsua.uibestpracticesexample.fragment;
 
 import android.app.AlertDialog;
 import android.app.Dialog;

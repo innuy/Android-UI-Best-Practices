@@ -1,4 +1,4 @@
-package com.example.diegoinsua.uibestpracticesexample.activities;
+package com.example.diegoinsua.uibestpracticesexample.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -6,7 +6,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
-import com.example.diegoinsua.uibestpracticesexample.fragments.InfoDialogFragment;
+import com.example.diegoinsua.uibestpracticesexample.fragment.InfoDialogFragment;
 import com.example.diegoinsua.uibestpracticesexample.R;
 
 public class NoteListWActivity extends AppCompatActivity {

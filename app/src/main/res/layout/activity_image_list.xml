@@ -3,14 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.diegoinsua.uibestpracticesexample.activities.ImageListActivity"
+    tools:context="com.example.diegoinsua.uibestpracticesexample.activity.ImageListActivity"
     android:orientation="vertical">
 
 
     <fragment
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:name="com.example.diegoinsua.uibestpracticesexample.fragments.ImageListFragment"
+        android:name="com.example.diegoinsua.uibestpracticesexample.fragment.ImageListFragment"
         android:id="@+id/fragment3"
         android:layout_gravity="center_horizontal" />
 </LinearLayout>

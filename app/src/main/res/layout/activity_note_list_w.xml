@@ -4,13 +4,13 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.NoteListWActivity">
+    tools:context=".activity.NoteListWActivity">
 
 
     <fragment
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:name="com.example.diegoinsua.uibestpracticesexample.fragments.NoteListFragment"
+        android:name="com.example.diegoinsua.uibestpracticesexample.fragment.NoteListFragment"
         android:id="@+id/fragment2"
         android:layout_gravity="center_horizontal" />
 </LinearLayout>

@@ -1,4 +1,4 @@
-package com.example.diegoinsua.uibestpracticesexample.activities;
+package com.example.diegoinsua.uibestpracticesexample.activity;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -9,8 +9,8 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
-import com.example.diegoinsua.uibestpracticesexample.fragments.CategoryListFragment;
-import com.example.diegoinsua.uibestpracticesexample.fragments.InfoDialogFragment;
+import com.example.diegoinsua.uibestpracticesexample.fragment.CategoryListFragment;
+import com.example.diegoinsua.uibestpracticesexample.fragment.InfoDialogFragment;
 import com.example.diegoinsua.uibestpracticesexample.R;
 
 import butterknife.ButterKnife;

@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.diegoinsua.uibestpracticesexample.R;
-import com.example.diegoinsua.uibestpracticesexample.activities.EditNoteActivity;
+import com.example.diegoinsua.uibestpracticesexample.activity.EditNoteActivity;
 
 /**
  * Created on 4/7/16.

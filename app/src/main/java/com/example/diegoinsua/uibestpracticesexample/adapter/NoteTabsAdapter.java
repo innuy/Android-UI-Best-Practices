@@ -6,8 +6,8 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
 import com.example.diegoinsua.uibestpracticesexample.R;
-import com.example.diegoinsua.uibestpracticesexample.fragments.ImageListFragment;
-import com.example.diegoinsua.uibestpracticesexample.fragments.NoteListFragment;
+import com.example.diegoinsua.uibestpracticesexample.fragment.ImageGridFragment;
+import com.example.diegoinsua.uibestpracticesexample.fragment.NoteListFragment;
 
 /**
  * Created on 6/7/16.
@@ -31,7 +31,7 @@ public class NoteTabsAdapter extends FragmentPagerAdapter {
         if (position == 0) {
             fragment = new NoteListFragment();
         } else {
-            fragment = new ImageListFragment();
+            fragment = new ImageGridFragment();
         }
 
         return fragment;

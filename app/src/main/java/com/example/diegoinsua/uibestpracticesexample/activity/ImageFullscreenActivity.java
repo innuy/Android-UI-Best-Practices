@@ -1,4 +1,4 @@
-package com.example.diegoinsua.uibestpracticesexample.activities;
+package com.example.diegoinsua.uibestpracticesexample.activity;
 
 import android.app.Activity;
 import android.os.Bundle;

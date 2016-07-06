@@ -1,4 +1,4 @@
-package com.example.diegoinsua.uibestpracticesexample.fragments;
+package com.example.diegoinsua.uibestpracticesexample.fragment;
 
 import android.content.Context;
 import android.os.Bundle;

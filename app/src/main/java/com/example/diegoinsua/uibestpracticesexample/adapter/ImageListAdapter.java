@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.diegoinsua.uibestpracticesexample.R;
-import com.example.diegoinsua.uibestpracticesexample.activities.ImageFullscreenActivity;
+import com.example.diegoinsua.uibestpracticesexample.activity.ImageFullscreenActivity;
 
 /**
  * Created on 5/7/16.
