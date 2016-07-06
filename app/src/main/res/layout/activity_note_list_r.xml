@@ -9,7 +9,7 @@
     <fragment
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:name="com.example.diegoinsua.uibestpracticesexample.fragments.CategoriesFragment"
+        android:name="com.example.diegoinsua.uibestpracticesexample.fragments.CategoryListFragment"
         android:id="@+id/fragment"
         android:layout_gravity="left|center_vertical" />
 </FrameLayout>

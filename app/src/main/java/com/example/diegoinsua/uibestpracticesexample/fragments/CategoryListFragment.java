@@ -15,9 +15,9 @@ import com.example.diegoinsua.uibestpracticesexample.R;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 
-public class CategoriesFragment extends Fragment {
+public class CategoryListFragment extends Fragment {
 
-    public static final String LOG_TAG = "CategoriesFragment";
+    public static final String LOG_TAG = "CategoryListFragment";
 
     public interface CategoryFragmentListener {
         void onCategoryClick(int categoryId);
@@ -28,14 +28,14 @@ public class CategoriesFragment extends Fragment {
 
     private CategoryFragmentListener listener;
 
-    public CategoriesFragment() {
+    public CategoryListFragment() {
         listener = null;
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_categories, container, false);
+        View view = inflater.inflate(R.layout.fragment_categoriy_list, container, false);
 
         ButterKnife.inject(this, view);
 

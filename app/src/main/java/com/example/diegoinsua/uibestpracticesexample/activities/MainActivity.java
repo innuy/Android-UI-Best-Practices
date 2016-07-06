@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ButterKnife.inject(this);
 
-        final Intent categoriesIntent = new Intent(this, CategoriesWActivity.class);
+        final Intent categoriesIntent = new Intent(this, CategoryListWActivity.class);
         final Intent notesIntent = new Intent(this, NoteListRActivity.class);
 
         // Set the buttons' actions

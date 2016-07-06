@@ -6,9 +6,11 @@
     tools:context="com.example.diegoinsua.uibestpracticesexample.activities.ImageListActivity"
     android:orientation="vertical">
 
-    <android.support.v7.widget.RecyclerView
+
+    <fragment
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/image_list"
+        android:layout_height="match_parent"
+        android:name="com.example.diegoinsua.uibestpracticesexample.fragments.ImageListFragment"
+        android:id="@+id/fragment3"
         android:layout_gravity="center_horizontal" />
 </LinearLayout>

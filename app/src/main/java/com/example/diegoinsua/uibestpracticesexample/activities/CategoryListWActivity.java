@@ -9,7 +9,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
-import com.example.diegoinsua.uibestpracticesexample.fragments.CategoriesFragment;
+import com.example.diegoinsua.uibestpracticesexample.fragments.CategoryListFragment;
 import com.example.diegoinsua.uibestpracticesexample.fragments.InfoDialogFragment;
 import com.example.diegoinsua.uibestpracticesexample.R;
 
@@ -20,7 +20,7 @@ import butterknife.ButterKnife;
  * @author INNUY
  */
 
-public class CategoriesWActivity extends AppCompatActivity implements CategoriesFragment.CategoryFragmentListener {
+public class CategoryListWActivity extends AppCompatActivity implements CategoryListFragment.CategoryFragmentListener {
 
 //    @InjectView(R.id.category_list)
 //    ListView categoryList;

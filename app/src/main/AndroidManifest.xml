@@ -18,7 +18,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activities.CategoriesWActivity"
+            android:name=".activities.CategoryListWActivity"
             android:label="@string/categories_title" />
         <activity
             android:name=".activities.NoteListWActivity"
