@@ -10,7 +10,7 @@
         android:layout_height="match_parent"
         android:divider="@android:color/darker_gray"
         android:dividerHeight="1dp"
-        android:entries="@array/categories_names"
+        android:entries="@array/category_list_names"
         android:id="@+id/category_list">
     </ListView>
 </FrameLayout>

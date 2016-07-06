@@ -25,7 +25,23 @@ public class ImageFullscreenActivity extends Activity {
 
         // Set the image resource gotten from the parameters
         Bundle arguments = getIntent().getExtras();
-        int imageResource = arguments.getInt(IMAGE_KEY);
+        int imageNumber = arguments.getInt(IMAGE_KEY);
+        int imageResource = 0;
+
+        switch (imageNumber) {
+            case 0:
+                imageResource = R.mipmap.sample_image_1;
+                break;
+            case 1:
+                imageResource = R.mipmap.sample_image_2;
+                break;
+            case 2:
+                imageResource = R.mipmap.sample_image_3;
+                break;
+            case 3:
+                imageResource = R.mipmap.sample_image_4;
+        }
+
         image.setImageResource(imageResource);
     }
 }

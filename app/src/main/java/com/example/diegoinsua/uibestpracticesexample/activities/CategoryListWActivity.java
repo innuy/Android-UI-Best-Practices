@@ -28,7 +28,7 @@ public class CategoryListWActivity extends AppCompatActivity implements Category
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_categories_wrong);
+        setContentView(R.layout.activity_category_list_w);
         ButterKnife.inject(this);
 
 //        categoryList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -67,23 +67,23 @@ public class CategoryListWActivity extends AppCompatActivity implements Category
         final AlertDialog.Builder builder = new AlertDialog.Builder(this);
 
         builder
-                .setTitle(R.string.categories_wrong_dialog_title)
-                .setMessage(R.string.categories_wrong_dialog_message)
-                .setNeutralButton(R.string.categories_wrong_dialog_images,
+                .setTitle(R.string.category_list_w_dialog_title)
+                .setMessage(R.string.category_list_w_dialog_message)
+                .setNeutralButton(R.string.category_list_w_dialog_images,
                         new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 startActivity(imageListIntent);
                             }
                         })
-                .setPositiveButton(R.string.categories_wrong_dialog_notes,
+                .setPositiveButton(R.string.category_list_w_dialog_notes,
                         new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 startActivity(notesIntent);
                             }
                         })
-                .setNegativeButton(R.string.categories_wrong_dialog_cancel, null);
+                .setNegativeButton(R.string.category_list_w_dialog_cancel, null);
 
         builder.create().show();
     }

@@ -1,7 +1,7 @@
 package com.example.diegoinsua.uibestpracticesexample.fragments;
 
-import android.app.Fragment;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -18,7 +18,7 @@ import butterknife.InjectView;
  * Created on 6/7/16.
  * @author INNUY
  */
-public class NotesFragment extends Fragment {
+public class NoteListFragment extends Fragment {
 
     @InjectView(R.id.notes_list)
     RecyclerView notesList;

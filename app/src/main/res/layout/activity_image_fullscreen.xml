@@ -12,5 +12,5 @@
         android:id="@+id/image"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:src="@mipmap/sample_image" />
+        android:src="@mipmap/sample_image_1" />
 </RelativeLayout>

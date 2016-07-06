@@ -37,19 +37,19 @@ public class ImageListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHold
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
         ImageViewHolder viewHolder = (ImageViewHolder) holder;
 
-        int imageResource;
+        int imageResource = 0;
         switch (position % 4) {
             case 0:
-                imageResource = R.mipmap.sample_image;
+                imageResource = R.mipmap.sample_image_1_thumbnail;
                 break;
             case 1:
-                imageResource = R.mipmap.sample_image_2;
+                imageResource = R.mipmap.sample_image_2_thumbnail;
                 break;
             case 2:
-                imageResource = R.mipmap.sample_image_3;
+                imageResource = R.mipmap.sample_image_3_thumbnail;
                 break;
-            default:
-                imageResource = R.mipmap.sample_image_4;
+            case 3:
+                imageResource = R.mipmap.sample_image_4_thumbnail;
         }
         viewHolder.image.setImageResource(imageResource);
 
@@ -57,7 +57,7 @@ public class ImageListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHold
 
         // It adds the arguments to the activity intent
         Bundle arguments = new Bundle();
-        arguments.putInt(ImageFullscreenActivity.IMAGE_KEY, imageResource);
+        arguments.putInt(ImageFullscreenActivity.IMAGE_KEY, position % 4);
         intent.putExtras(arguments);
 
         viewHolder.image.setOnClickListener(new View.OnClickListener() {

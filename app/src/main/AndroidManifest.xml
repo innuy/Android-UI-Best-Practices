@@ -19,10 +19,10 @@
         </activity>
         <activity
             android:name=".activities.CategoryListWActivity"
-            android:label="@string/categories_title" />
+            android:label="@string/category_list_title" />
         <activity
             android:name=".activities.NoteListWActivity"
-            android:label="@string/notes_title" />
+            android:label="@string/note_list_title" />
         <activity
             android:name=".activities.EditNoteActivity"
             android:label="@string/note_edition_title" />
@@ -34,7 +34,7 @@
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
         <activity
             android:name=".activities.NoteListRActivity"
-            android:label="@string/notes_title"/>
+            android:theme="@style/AppTheme.NoteListRActivity"/>
     </application>
 
 </manifest>

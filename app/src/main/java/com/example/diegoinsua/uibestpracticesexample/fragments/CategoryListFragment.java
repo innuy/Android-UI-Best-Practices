@@ -42,7 +42,8 @@ public class CategoryListFragment extends Fragment {
         categoryList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                listener.onCategoryClick(position);
+                if (listener != null)
+                    listener.onCategoryClick(position);
             }
         });
 

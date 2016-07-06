@@ -5,11 +5,39 @@
     android:layout_height="match_parent"
     tools:context="com.example.diegoinsua.uibestpracticesexample.activities.NoteListRActivity">
 
+    <!--<fragment-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:name="com.example.diegoinsua.uibestpracticesexample.fragments.CategoryListFragment"-->
+        <!--android:id="@+id/fragment"-->
+        <!--android:layout_gravity="left|center_vertical" />-->
 
-    <fragment
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:name="com.example.diegoinsua.uibestpracticesexample.fragments.CategoryListFragment"
-        android:id="@+id/fragment"
-        android:layout_gravity="left|center_vertical" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/view"
+            android:background="@color/colorPrimary" />
+
+        <android.support.v4.view.ViewPager
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pager"
+            android:layout_gravity="center">
+
+            <android.support.v4.view.PagerTabStrip
+                style="@style/AppTheme.Pager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pagerTitle"
+                android:layout_gravity="top" />
+        </android.support.v4.view.ViewPager>
+
+    </LinearLayout>
+
+
 </FrameLayout>

@@ -12,22 +12,22 @@
     <string name="info_empty_message">No information to show</string>
     <string name="info_close_btn">Close</string>
 
-    <string name="categories_title">Categories</string>
-    <string-array name="categories_names">
+    <string name="category_list_title">Categories</string>
+    <string-array name="category_list_names">
         <item>Category 1</item>
         <item>Category 2</item>
         <item>Category 3</item>
         <item>Category 4</item>
         <item>Category 5</item>
     </string-array>
-    <string name="info_categories_wrong">As you can see, there is a lot of empty space after the category names, and even more at the bottom of the screen.</string>
-    <string name="categories_wrong_dialog_title">Edit</string>
-    <string name="categories_wrong_dialog_message">What do you want to edit?</string>
-    <string name="categories_wrong_dialog_images">Images</string>
-    <string name="categories_wrong_dialog_notes">Notes</string>
-    <string name="categories_wrong_dialog_cancel">Cancel</string>
+    <string name="info_category_list_wrong">As you can see, there is a lot of empty space after the category names, and even more at the bottom of the screen.</string>
+    <string name="category_list_w_dialog_title">Edit</string>
+    <string name="category_list_w_dialog_message">What do you want to edit?</string>
+    <string name="category_list_w_dialog_images">Images</string>
+    <string name="category_list_w_dialog_notes">Notes</string>
+    <string name="category_list_w_dialog_cancel">Cancel</string>
 
-    <string name="notes_title">Notes</string>
+    <string name="note_list_title">Notes</string>
     <string name="note_item_title">Note # </string>
 
     <string name="note_edition_title">Note Edition</string>

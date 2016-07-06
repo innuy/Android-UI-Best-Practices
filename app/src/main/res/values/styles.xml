@@ -4,6 +4,7 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+
     <style name="AppTheme.Button" parent="Base.TextAppearance.AppCompat.Button">
         <item name="android:background">@color/colorPrimary</item>
         <item name="android:textColor">@android:color/white</item>
@@ -19,5 +20,16 @@
     </style>
     <style name="AppTheme.NoteItemText" parent="android:TextAppearance.Small">
         <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="AppTheme.NoteListRActivity" parent="Theme.AppCompat.Light.NoActionBar">
+    </style>
+    <style name="AppTheme.Pager">
+        <item name="android:textAppearance">@style/AppTheme.PagerTitle</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:padding">15dp</item>
+    </style>
+    <style name="AppTheme.PagerTitle" parent="android:TextAppearance.Medium">
+        <item name="android:textColor">@color/colorAccent</item>
     </style>
 </resources>
