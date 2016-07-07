@@ -21,6 +21,9 @@
         <item>Category 5</item>
     </string-array>
     <string name="info_category_list_wrong">As you can see, there is a lot of empty space after the category names, and even more at the bottom of the screen.</string>
+
+    <string name="category_list_r_name">Category #</string>
+
     <string name="category_list_w_dialog_title">Edit</string>
     <string name="category_list_w_dialog_message">What do you want to edit?</string>
     <string name="category_list_w_dialog_images">Images</string>

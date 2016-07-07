@@ -36,14 +36,14 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/translucent_black">
+        android:background="@color/translucent_black"
+        android:id="@+id/category_list">
 
         <fragment
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:name="com.example.diegoinsua.uibestpracticesexample.fragment.CategoryListWFragment"
-            android:id="@+id/fragment"
-            android:layout_marginRight="150dp" />
+            android:name="com.example.diegoinsua.uibestpracticesexample.fragment.CategoryListRFragment"
+            android:id="@+id/fragment" />
     </LinearLayout>
 
 

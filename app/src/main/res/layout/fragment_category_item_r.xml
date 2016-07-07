@@ -3,12 +3,13 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:contextClickable="false"
-    android:background="@color/colorPrimary">
+    android:background="@color/colorPrimary"
+    android:id="@+id/background">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Medium Text"
-        android:id="@+id/textView"
+        android:text="name"
+        android:id="@+id/name"
         style="@style/AppTheme.CategoryLight"/>
 </LinearLayout>
