@@ -31,10 +31,14 @@
             android:label="@string/image_list_title" />
         <activity
             android:name=".activity.ImageFullscreenActivity"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+            android:theme="@style/AppTheme.FullScreen"
+            android:configChanges="orientation"/>
         <activity
             android:name=".activity.CategoryListRActivity"
             android:label="@string/category_list_title" />
+        <activity
+            android:name=".activity.ImagePagerActivity"
+            android:theme="@style/AppTheme.FullScreen"/>
     </application>
 
 </manifest>

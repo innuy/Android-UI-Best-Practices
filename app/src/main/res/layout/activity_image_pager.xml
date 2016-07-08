@@ -3,14 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.diegoinsua.uibestpracticesexample.activity.ImageFullscreenActivity">
+    tools:context="com.example.diegoinsua.uibestpracticesexample.activity.ImagePagerActivity">
 
-    <FrameLayout
+    <android.support.v4.view.ViewPager
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:id="@+id/pager"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/image_fragment"/>
+        android:layout_centerHorizontal="true" />
 
     <ImageView
         android:layout_width="wrap_content"

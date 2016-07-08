@@ -1,6 +1,8 @@
 package com.example.diegoinsua.uibestpracticesexample.adapter;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -8,6 +10,7 @@ import android.widget.GridView;
 import android.widget.ImageView;
 
 import com.example.diegoinsua.uibestpracticesexample.R;
+import com.example.diegoinsua.uibestpracticesexample.activity.ImagePagerActivity;
 import com.example.diegoinsua.uibestpracticesexample.view.ImageSquareView;
 
 /**
@@ -40,7 +43,7 @@ public class ImageGridAdapter extends BaseAdapter {
     }
 
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(final int position, View convertView, ViewGroup parent) {
         ImageSquareView imageView;
 
         if (convertView == null) {
@@ -68,6 +71,19 @@ public class ImageGridAdapter extends BaseAdapter {
         imageView.setImageResource(imageResource);
 
         imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
+
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent imageIntent = new Intent(activity, ImagePagerActivity.class);
+
+                Bundle arguments = new Bundle();
+                arguments.putInt(ImagePagerActivity.IMG_POS_KEY, position);
+                imageIntent.putExtras(arguments);
+
+                activity.startActivity(imageIntent);
+            }
+        });
 
         return imageView;
     }
