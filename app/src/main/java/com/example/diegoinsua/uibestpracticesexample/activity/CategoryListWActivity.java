@@ -22,41 +22,11 @@ import butterknife.ButterKnife;
 
 public class CategoryListWActivity extends AppCompatActivity implements CategoryListWFragment.CategoryWFragmentListener {
 
-//    @InjectView(R.id.category_list)
-//    ListView categoryList;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_category_list_w);
         ButterKnife.inject(this);
-
-//        categoryList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//            @Override
-//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-//                // Creates a dialog to choose navigate to the images or the notes
-//                builder
-//                        .setTitle(R.string.categories_wrong_dialog_title)
-//                        .setMessage(R.string.categories_wrong_dialog_message)
-//                        .setNeutralButton(R.string.categories_wrong_dialog_images,
-//                                new DialogInterface.OnClickListener() {
-//                                    @Override
-//                                    public void onClick(DialogInterface dialog, int which) {
-//                                        startActivity(imageListIntent);
-//                                    }
-//                                })
-//                        .setPositiveButton(R.string.categories_wrong_dialog_notes,
-//                                new DialogInterface.OnClickListener() {
-//                                    @Override
-//                                    public void onClick(DialogInterface dialog, int which) {
-//                                        startActivity(notesIntent);
-//                                    }
-//                                })
-//                        .setNegativeButton(R.string.categories_wrong_dialog_cancel, null);
-//
-//                builder.create().show();
-//            }
-//        });
     }
 
     @Override

@@ -40,7 +40,7 @@ public class InfoDialogFragment extends DialogFragment {
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
 
-        int textResource = getArguments().getInt(TEXT_RESOURCE_KEY, R.string.info_empty_message);
+        int textResource = getArguments().getInt(TEXT_RESOURCE_KEY, R.string.info_empty);
 
         builder
                 .setTitle(R.string.info)

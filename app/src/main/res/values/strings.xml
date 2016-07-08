@@ -9,20 +9,20 @@
     <string name="wrong_way">Wrong way</string>
 
     <string name="info">Information</string>
-    <string name="info_empty_message">No information to show</string>
+    <string name="info_empty">No info</string>
     <string name="info_close_btn">Close</string>
 
-    <string name="category_list_title">Categories</string>
+    <string name="category_list_title">Cases</string>
     <string-array name="category_list_names">
-        <item>Category 1</item>
-        <item>Category 2</item>
-        <item>Category 3</item>
-        <item>Category 4</item>
-        <item>Category 5</item>
+        <item>Case 1</item>
+        <item>Case 2</item>
+        <item>Case 3</item>
+        <item>Case 4</item>
+        <item>Case 5</item>
     </string-array>
     <string name="info_category_list_wrong">As you can see, there is a lot of empty space after the category names, and even more at the bottom of the screen.</string>
 
-    <string name="category_list_r_name">Category #</string>
+    <string name="category_list_r_name">Case #</string>
 
     <string name="category_list_w_dialog_title">Edit</string>
     <string name="category_list_w_dialog_message">What do you want to edit?</string>
@@ -45,4 +45,10 @@
         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </string>
+    <string name="title_activity_asdf">asdf</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
 </resources>

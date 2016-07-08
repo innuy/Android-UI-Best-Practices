@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.inject(this);
 
         final Intent categoriesIntent = new Intent(this, CategoryListWActivity.class);
-        final Intent notesIntent = new Intent(this, NoteListRActivity.class);
+        final Intent notesIntent = new Intent(this, CategoryListRActivity.class);
 
         // Set the buttons' actions
         wrongWay.setOnClickListener(new View.OnClickListener() {

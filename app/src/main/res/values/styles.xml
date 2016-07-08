@@ -1,4 +1,5 @@
 <resources>
+
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -10,25 +11,27 @@
         <item name="android:textColor">@android:color/white</item>
         <item name="android:padding">2dp</item>
     </style>
+
     <style name="AppTheme.Toolbar">
         <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
         <item name="android:textColor">@android:color/white</item>
     </style>
+
     <style name="AppTheme.NoteItemTitle" parent="android:TextAppearance.Medium">
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/colorAccent</item>
     </style>
+
     <style name="AppTheme.NoteItemText" parent="android:TextAppearance.Small">
         <item name="android:textStyle">italic</item>
     </style>
 
-    <style name="AppTheme.NoteListRActivity" parent="Theme.AppCompat.Light.NoActionBar">
-    </style>
     <style name="AppTheme.Pager">
         <item name="android:textAppearance">@style/AppTheme.PagerTitle</item>
         <item name="android:background">@color/colorPrimaryDark</item>
         <item name="android:padding">15dp</item>
     </style>
+
     <style name="AppTheme.PagerTitle" parent="android:TextAppearance.Medium">
         <item name="android:textColor">@color/colorAccent</item>
     </style>
@@ -40,6 +43,7 @@
         <item name="android:paddingTop">5dp</item>
         <item name="android:paddingBottom">5dp</item>
     </style>
+
     <style name="AppTheme.CategorySelected" parent="android:TextAppearance.Medium">
         <item name="android:textColor">@android:color/white</item>
         <item name="android:paddingLeft">15dp</item>
