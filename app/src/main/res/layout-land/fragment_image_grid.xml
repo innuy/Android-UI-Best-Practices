@@ -7,7 +7,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/image_grid"
-        android:numColumns="auto_fit"
+        android:numColumns="3"
         android:nestedScrollingEnabled="false"
         android:horizontalSpacing="5dp"
         android:verticalSpacing="5dp"

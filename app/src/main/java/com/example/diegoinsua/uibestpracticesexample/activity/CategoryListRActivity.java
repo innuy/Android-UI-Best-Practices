@@ -37,13 +37,29 @@ public class CategoryListRActivity extends AppCompatActivity
 
         NoteTabsAdapter tabsAdapter = new NoteTabsAdapter(getSupportFragmentManager(), this);
         pager.setAdapter(tabsAdapter);
+        pager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
 
-        ActionBar actionBar = getSupportActionBar();
-        if (actionBar != null) {
-            actionBar.setDisplayHomeAsUpEnabled(true);
-            actionBar.setHomeAsUpIndicator(R.mipmap.ic_menu);
-        }
+            }
 
+            @Override
+            public void onPageSelected(int position) {
+                int dialogResource = position == 0
+                        ? R.string.info_note_list_r : R.string.info_image_grid_r;
+                InfoDialogFragment infoDialogFragment =
+                        InfoDialogFragment.newInstance(dialogResource);
+                infoDialogFragment.show(getFragmentManager(), "Info dialog");
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+
+            }
+        });
+
+        // Category list is null only when the screen size is large.
+        // So it only hides the categories when it is on a mobile phone.
         if (categoryList != null) {
             categoryList.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -52,6 +68,12 @@ public class CategoryListRActivity extends AppCompatActivity
                 }
             });
             categoryList.setVisibility(View.GONE);
+
+            ActionBar actionBar = getSupportActionBar();
+            if (actionBar != null) {
+                actionBar.setDisplayHomeAsUpEnabled(true);
+                actionBar.setHomeAsUpIndicator(R.mipmap.ic_menu);
+            }
         }
     }
 
@@ -78,8 +100,10 @@ public class CategoryListRActivity extends AppCompatActivity
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.action_info:
+                int dialogResource = pager.getCurrentItem() == 0
+                        ? R.string.info_note_list_r : R.string.info_image_grid_r;
                 InfoDialogFragment infoDialogFragment =
-                        InfoDialogFragment.newInstance(R.string.info_category_list_wrong);
+                        InfoDialogFragment.newInstance(dialogResource);
                 infoDialogFragment.show(getFragmentManager(), "Info dialog");
                 return true;
             case android.R.id.home:

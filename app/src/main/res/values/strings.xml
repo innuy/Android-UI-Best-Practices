@@ -20,7 +20,7 @@
         <item>Case 4</item>
         <item>Case 5</item>
     </string-array>
-    <string name="info_category_list_wrong">As you can see, there is a lot of empty space after the category names, and even more at the bottom of the screen.</string>
+    <string name="info_category_list_w">As you can see, there is a lot of empty space after the category names, and even more at the bottom of the screen.</string>
 
     <string name="category_list_r_name">Case #</string>
 
@@ -32,12 +32,29 @@
 
     <string name="note_list_title">Notes</string>
     <string name="note_item_title">Note # </string>
+    <string name="info_note_list_w">
+        The problem here is the lack of navigability to the images on the same case.
+        \nIf you want to go to them, you should go back and then to the images.
+    </string>
+    <string name="info_note_list_r">
+        This view have direct access to the images on the same category, and to the categories, so you can access quickly to any place of the app.
+    </string>
 
     <string name="note_edition_title">Note Edition</string>
     <string name="note_edition_cancel">Cancel</string>
     <string name="note_edition_save">Save</string>
 
     <string name="image_list_title">Images</string>
+    <string name="info_image_list_w">
+        The problem here is the whitespace to both sizes of the images, especially on landscape mode.
+        \n\nAlso, as on the notes activity, you can\'t go to the notes on the same case.
+    </string>
+    <string name="info_image_grid_r">
+        As you can see, the images are arranged to fit the screen to use more empty space.
+        \n\nAlso as in the notes view, you can access quickly to any place of the app.
+    </string>
+    <string name="info_image_fullscreen_w">Here you can\'t go to the other images on the same category on fullscreen mode, you have to close it and open another</string>
+    <string name="info_image_fullscreen_r">In this case you can access the other images simply by swiping to the left or right.</string>
 
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

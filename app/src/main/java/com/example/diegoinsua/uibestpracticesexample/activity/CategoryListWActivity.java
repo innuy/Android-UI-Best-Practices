@@ -70,7 +70,7 @@ public class CategoryListWActivity extends AppCompatActivity implements Category
         switch (item.getItemId()) {
             case R.id.action_info:
                 InfoDialogFragment infoDialogFragment =
-                        InfoDialogFragment.newInstance(R.string.info_categories_wrong);
+                        InfoDialogFragment.newInstance(R.string.info_category_list_w);
                 infoDialogFragment.show(getFragmentManager(), "Info dialog");
                 return true;
             default:
