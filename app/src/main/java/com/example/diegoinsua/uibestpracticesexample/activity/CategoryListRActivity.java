@@ -45,16 +45,18 @@ public class CategoryListRActivity extends AppCompatActivity
 
             @Override
             public void onPageSelected(int position) {
-                int dialogResource = position == 0
-                        ? R.string.info_note_list_r : R.string.info_image_grid_r;
-                InfoDialogFragment infoDialogFragment =
-                        InfoDialogFragment.newInstance(dialogResource);
-                infoDialogFragment.show(getFragmentManager(), "Info dialog");
+
             }
 
             @Override
             public void onPageScrollStateChanged(int state) {
-
+                if (state == ViewPager.SCROLL_STATE_IDLE) {
+                    int dialogResource = pager.getCurrentItem() == 0
+                            ? R.string.info_note_list_r : R.string.info_image_grid_r;
+                    InfoDialogFragment infoDialogFragment =
+                            InfoDialogFragment.newInstance(dialogResource);
+                    infoDialogFragment.show(getFragmentManager(), "Info dialog");
+                }
             }
         });
 
@@ -80,6 +82,11 @@ public class CategoryListRActivity extends AppCompatActivity
     @Override
     protected void onStart() {
         super.onStart();
+        int dialogResource = pager.getCurrentItem() == 0
+                ? R.string.info_note_list_r : R.string.info_image_grid_r;
+        InfoDialogFragment infoDialogFragment =
+                InfoDialogFragment.newInstance(dialogResource);
+        infoDialogFragment.show(getFragmentManager(), "Info dialog");
     }
 
     @Override
